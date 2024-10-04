@@ -11,9 +11,6 @@ public class Dish implements Cloneable {
     private String DishName;
     private int DishPrice;
     private String DishNumber;
-    public Dish() {
-
-    }
 
 
     @Override
@@ -32,27 +29,8 @@ public class Dish implements Cloneable {
         return DishNumber;
     }
 
-    public void setDishNumber(String dishNumber) {
-
-        DishNumber = dishNumber;
-    }
-
-    public String getDishName() {
-        return DishName;
-    }
-
-    public void setDishName(String dishName) {
-        DishName = dishName;
-    }
-
     public int getDishPrice() {
         return DishPrice;
     }
-
-    public void setDishPrice(int dishPrice) {
-        DishPrice = dishPrice;
-    }
-
-
 
 }

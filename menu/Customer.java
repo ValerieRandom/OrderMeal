@@ -23,31 +23,6 @@ public class Customer {
         TotalPrice = totalPrice;
     }
 
-
-    public int getCount() {
-        return Count;
-    }
-
-    public void setCount(int count) {
-        Count = count;
-    }
-
-    public int getDeskNo() {
-        return DeskNo;
-    }
-
-    public void setDeskNo(int deskNo) {
-        DeskNo = deskNo;
-    }
-
-    public int getTotalPrice() {
-        return TotalPrice;
-    }
-
-    public void setTotalPrice(int totalPrice) {
-        TotalPrice = totalPrice;
-    }
-
     // 計算總價格的方法
     public int calculateTotalPrice() {
         int total = 0;
@@ -63,4 +38,8 @@ public class Customer {
         System.out.println("您的消費總額為：" + totalPrice + " 元。");
     }
 
+    // 新增根據菜品編號移除菜品的方法
+    public boolean removeDishByNumber(String dishNumber) {
+        return dishes.removeIf(dish -> dish.getDishNumber().equals(dishNumber));
+    }
 }
